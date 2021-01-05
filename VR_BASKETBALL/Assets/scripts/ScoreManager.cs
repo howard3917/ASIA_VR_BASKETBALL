@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Basketball")
+        if (other.tag == "Basketball" && other.transform.position.y >2.5f)
         { 
             AddScore(); 
         }
